@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
-    <div class="grid-square-16">
-        
+    <div class="slidecontainer">
+        <p>Choose your sketch pad size:</p>
+        <input type="range" id="slider" min="10" max="64" value="16">
+        <p>Value: <span id="slider-value"></span></p>
     </div>
+
+    <div class="container-div" id="grid-16">
+
+    </div>
+
+    <button type="button" id="resetButton">Reset</button>
+    <button type="button" id="rainbowButton">Rainbow</button>
+    <button type="button" id="blackButton">Black</button>
+    <button type="button" id="eraserButton">Eraser</button>
     
 
     <script src="../app.js"></script>
