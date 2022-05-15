@@ -77,10 +77,10 @@ function clearGrid (){
 
 
 gridSquare(slider.value);
-sliderValue.innerHTML = slider.value;
+sliderValue.innerHTML = slider.value + " x " + slider.value;
 
 slider.oninput = () => {
-    sliderValue.innerHTML = slider.value;
+    sliderValue.innerHTML = slider.value + " x " + slider.value;
     clearGrid();
     gridSquare(slider.value)};
 

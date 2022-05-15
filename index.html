@@ -6,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Poppins:ital,wght@0,300;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <div class="slidecontainer">
+    <h1 id="title">Etch-a-Sketch</h1>
+
+    <div class="main-div">
+     <div class="slidecontainer">
         <p>Choose your sketch pad size:</p>
         <input type="range" id="slider" min="10" max="64" value="16">
-        <p>Value: <span id="slider-value"></span></p>
+        <p>Size:  <span id="slider-value"></span></p>
     </div>
 
     <div class="container-div" id="grid-16">
 
     </div>
 
-    <button type="button" id="resetButton">Reset</button>
+    <div class="options">
+    <p id="mode">Mode: </p>
     <button type="button" id="rainbowButton">Rainbow</button>
     <button type="button" id="blackButton">Black</button>
-    <button type="button" id="eraserButton">Eraser</button>
+
+    <button type="button" id="resetButton">Reset</button>
+    <button type="button" id="eraserButton">Eraser</button>        
+    </div>    
+
+    </div>
+
+
     
 
     <script src="../app.js"></script>
